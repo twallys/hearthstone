@@ -1,0 +1,317 @@
+{
+	"info": {
+		"_postman_id": "5a9317b9-52a3-47cd-81af-72ea1e1fa30f",
+		"name": "MyCapital - HearthStone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Card",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/card",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"card"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/card/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"card",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Card 16\",\r\n    \"description\": \"Card 16 - Description\",\r\n    \"power\": 9,\r\n    \"defense\": 4,\r\n    \"type\": 0,\r\n    \"classType\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/card",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"card"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save List of Cards",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"name\": \"Card 01\",\r\n        \"description\": \"Card 01 - Description\",\r\n        \"power\": 10,\r\n        \"defense\": 10,\r\n        \"type\": 1,\r\n        \"classType\": 3\r\n    },\r\n\r\n    {\r\n        \"name\": \"Card 02\",\r\n        \"description\": \"Card 02 - Description\",\r\n        \"power\": 8,\r\n        \"defense\": 5,\r\n        \"type\": 0,\r\n        \"classType\": 2\r\n    },\r\n\r\n    {\r\n        \"name\": \"Card 03\",\r\n        \"description\": \"Card 03 - Description\",\r\n        \"power\": 9,\r\n        \"defense\": 4,\r\n        \"type\": 0,\r\n        \"classType\": 4\r\n    },\r\n\r\n    {\r\n        \"name\": \"Card 04\",\r\n        \"description\": \"Card 04 - Description\",\r\n        \"power\": 4,\r\n        \"defense\": 4,\r\n        \"type\": 0,\r\n        \"classType\": 0\r\n    },\r\n\r\n    {\r\n        \"name\": \"Card 05\",\r\n        \"description\": \"Card 05 - Description\",\r\n        \"power\": 10,\r\n        \"defense\": 10,\r\n        \"type\": 1,\r\n        \"classType\": 1\r\n    },\r\n\r\n    {\r\n        \"name\": \"Card 06\",\r\n        \"description\": \"Card 06 - Description\",\r\n        \"power\": 4,\r\n        \"defense\": 4,\r\n        \"type\": 0,\r\n        \"classType\": 0\r\n    },\r\n\r\n    {\r\n        \"name\": \"Card 07\",\r\n        \"description\": \"Card 07 - Description\",\r\n        \"power\": 6,\r\n        \"defense\": 6,\r\n        \"type\": 1,\r\n        \"classType\": 4\r\n    },\r\n\r\n    {\r\n        \"name\": \"Card 08\",\r\n        \"description\": \"Card 08 - Description\",\r\n        \"power\": 10,\r\n        \"defense\": 10,\r\n        \"type\": 1,\r\n        \"classType\": 3\r\n    },\r\n\r\n    {\r\n        \"name\": \"Card 09\",\r\n        \"description\": \"Card 09 - Description\",\r\n        \"power\": 8,\r\n        \"defense\": 5,\r\n        \"type\": 0,\r\n        \"classType\": 2\r\n    },\r\n\r\n    {\r\n        \"name\": \"Card 10\",\r\n        \"description\": \"Card 10 - Description\",\r\n        \"power\": 9,\r\n        \"defense\": 4,\r\n        \"type\": 0,\r\n        \"classType\": 4\r\n    },\r\n\r\n    {\r\n        \"name\": \"Card 11\",\r\n        \"description\": \"Card 11 - Description\",\r\n        \"power\": 4,\r\n        \"defense\": 4,\r\n        \"type\": 0,\r\n        \"classType\": 0\r\n    },\r\n\r\n    {\r\n        \"name\": \"Card 12\",\r\n        \"description\": \"Card 12 - Description\",\r\n        \"power\": 10,\r\n        \"defense\": 10,\r\n        \"type\": 1,\r\n        \"classType\": 1\r\n    },\r\n\r\n    {\r\n        \"name\": \"Card 13\",\r\n        \"description\": \"Card 13 - Description\",\r\n        \"power\": 4,\r\n        \"defense\": 4,\r\n        \"type\": 0,\r\n        \"classType\": 0\r\n    },\r\n\r\n    {\r\n        \"name\": \"Card 14\",\r\n        \"description\": \"Card 14 - Description\",\r\n        \"power\": 6,\r\n        \"defense\": 6,\r\n        \"type\": 1,\r\n        \"classType\": 4\r\n    },\r\n\r\n    {\r\n        \"name\": \"Card 15\",\r\n        \"description\": \"Card 15 - Description\",\r\n        \"power\": 9,\r\n        \"defense\": 4,\r\n        \"type\": 0,\r\n        \"classType\": 4\r\n    }\r\n\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/card/save-list",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"card",
+								"save-list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Card 03 - Updated\",\r\n    \"description\": \"Card 03 - Description - Updated\",\r\n    \"power\": 5,\r\n    \"defense\": 9,\r\n    \"type\": 0,\r\n    \"classType\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/card/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"card",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/card/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"card",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Deck",
+			"item": [
+				{
+					"name": "GetAll Simplified",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/deck",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"deck"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll Detailed",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/deck",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"deck"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById Detailed",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/deck/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"deck",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Deck 01\",\r\n    \"cards\": [\r\n        { \"id\": 1 },\r\n        { \"id\": 1 },\r\n        { \"id\": 2 },\r\n        { \"id\": 2 },\r\n        { \"id\": 3 }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/deck",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"deck"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Deck 03 - Updated 2\",\r\n    \"cards\": [\r\n        { \"id\": 1 },\r\n        { \"id\": 1 },\r\n        { \"id\": 2 },\r\n        { \"id\": 2 },\r\n        { \"id\": 3 }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/deck/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"deck",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/deck/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"deck",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
